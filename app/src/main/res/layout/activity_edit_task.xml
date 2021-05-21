@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="198dp">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_horizontal"
+            android:text="Edit Your Tasks"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bgitemdoes"
+        android:orientation="vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Edit Tasks"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/titledoes"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:hint="Enter your task"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#B5B5B5"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textvie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Edit SubTasks"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/subtask"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:hint="Edit your subtask"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#B5B5B5"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Edit Deadline"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/datedoes"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:hint="mm/dd/yyyy format"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#B5B5B5"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bgbtncreate"
+        android:text="Edit Now"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

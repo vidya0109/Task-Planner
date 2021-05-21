@@ -1,46 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:layout_marginBottom="19dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:background="@drawable/bgitemdoes"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:padding="8dp">
 
-    <LinearLayout
-        android:layout_width="220dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="16dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/titledoes"
-            style="@style/Widget.AppCompat.TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="19dp"
-            android:fontFamily="sans-serif"
-            android:text="Buy whiskas"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="normal" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="125dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp">
+        android:padding="8dp">
 
-        <TextView
-            android:id="@+id/datedoes"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="right"
-            android:text="Hurry Up"
-            android:textColor="#E50914"
-            android:textSize="14sp" />
+            >
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/titledoes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp"
+                android:text="Movie title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textColorHint="#00000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/datedoes"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center|right"
+                android:text="TextView"
+                android:textColor="#E53935"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/titledoes"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titledoes">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Subtask"
+                    android:textColor="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/plotTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

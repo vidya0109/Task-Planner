@@ -76,5 +76,22 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp"
+        android:clickable="true"
+        android:onClick="logout"
+        android:src="@drawable/logout"
+        android:text="Add Data"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        app:icon="@drawable/logout"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+
+
 
 </LinearLayout>

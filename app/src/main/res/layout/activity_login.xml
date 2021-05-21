@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_horizontal"
+            android:text="Verify Your OTP"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bgitemdoes"
+        android:orientation="vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Enter OTP"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/subtask"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:hint="Enter your OTP"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#B5B5B5" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bgbtncreate"
+        android:text="Verify Now"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="Retry Now"
+        android:textColor="#0321E5"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-50dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
